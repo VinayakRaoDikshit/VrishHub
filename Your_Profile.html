@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Your_Profile.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <aside>
+            <div class="top">
+                <div class="logo">
+                    <img src="logo.jpeg" alt="">
+                    <h2>Vrish<span class="danger">HUB</span></h2>
+                </div>
+                <div class="close" id="closeBtn">
+                    <span class="material-icons-sharp">
+                        close
+                        </span>
+                </div>
+            </div>
+            <div class="sidebar">
+                    <a href="Dashboard.html">
+                        <span class="material-icons-sharp">grid_view</span>
+                    <h3>Dashboard</h3>
+                    </a>
+                    <a href="#" class="active">
+                    <span class="material-icons-sharp">analytics</span>
+                    <h3>Analytics</h3>
+                    </a>
+                    <a href="#"><span class="material-icons-sharp">receipt_long</span>
+                    <h3>Your Orders</h3></a>
+                    <a href="#"><span class="material-icons-sharp">manage_accounts</span>
+                    <h3>Settings</h3></a>
+                    <a href="#"><span class="material-icons-sharp">account_circle</span>
+                    <h3>Your Profile</h3>
+                    </a>
+                    <a href="#">
+                    <span class="material-icons-sharp">logout</span>
+                    <h3>Log Out</h3>
+                    </a>
+            </div>
+        </aside>
+        <!-- End of Aside -->
+        <div class="recent-purchase">
+            <p class="yd">Your Details</p>
+            <table>
+                <tbody>
+                    <thead><tr>
+                    <th class="thead">Name</th>
+                    <td class="table">XYZ</td>
+                </tr>
+            </thead>
+                <tr>
+                    <th class="thead">Email</th>
+                    <td class="table">somemail.com</td>
+                </tr><tr>
+                    <th class="thead">Pan</th>
+                    <td class="table">5600</td>
+                </tr><tr>
+                    <th class="thead">Phone</th>
+                    <td class="table">5600</td>
+                </tr><tr>
+                    <th class="thead">Demat(BO)</th>
+                    <td class="table">5600</td>
+                </tr>
+                <tr>
+                    <th class="thead">Segments</th>
+                    <Td class="table">Bse,Nse</Td>
+                </tr>
+                <tr>
+                    <th class="thead">PoA</th>
+                    <td class="table">Inactiuve</td>
+                </tr>
+            </tbody>
+            </table>
+        </div>
+        <script>
+            const sideMenu = document.querySelector("aside");
+            const menuBtn = document.querySelector("#menuBtn");
+            const closeBtn = document.querySelector("#closeBtn");
+            const themeToggler = document.querySelector(".theme-toggler");
+    
+            menuBtn.addEventListener('click', ()=>{
+            sideMenu.style.display= 'block';
+            })
+            closeBtn.addEventListener('click', ()=>{
+            sideMenu.style.display= 'none';
+            })
+        </script>
+        <div class="right">
+            <div class="top">
+                <button id="menuBtn">
+                    <span class="material-icons-sharp">menu</span>
+                </button>
+                </div>
+            </div>
+        </div>
+</body>
+</html>
