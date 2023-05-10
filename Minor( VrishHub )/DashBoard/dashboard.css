@@ -8,7 +8,7 @@
     --color-white: #fff;
     --color-info-dark: #7d8da1;
     --color-info-light:  #dce1eb;
-    --color-dark: #363949;
+    --color-dark: #0f0f11;
     --color-light: rgba(132, 139, 200, 0.158);
     --color-primary-variant: #111e88;
     --color-dark-variant: #677483;
@@ -27,7 +27,7 @@
     --color-background: #181a1e;
     --color-white: #202528;
     --color-dark: #edeffd;
-    --color-dark-variant: #a3bdcc;
+    --color-dark-variant: #000000;
     --color-light: rgba(0, 0, 0, 0.4);
     --box-shadow:0 2rem 3rem var(--color-light);
 }
