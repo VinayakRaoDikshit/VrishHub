@@ -13,9 +13,10 @@
     <div class="container">
         <aside>
             <div class="top">
-                <div class="logo">
-                    <img src="/Minor( VrishHub )/images/new_logo-removebg-preview.png" alt="">
-                    <h2>Vrish<span class="danger">HUB</span></h2>
+                <img  class="logo" src="/Minor( VrishHub )/images/new_logo-removebg-preview.png" alt="">
+                <div class="logo" >
+                    
+                    <h2>Vrish<span class="danger">Hub</span></h2>
                 </div>
                 <div class="close" id="closeBtn">
                     <span class="material-icons-sharp">
@@ -32,8 +33,6 @@
                     <span class="material-icons-sharp">analytics</span>
                     <h3>Analytics</h3>
                     </a>
-                    <a href="#"><span class="material-icons-sharp">receipt_long</span>
-                    <h3>Your Orders</h3></a>
                     <a href="#"><span class="material-icons-sharp">manage_accounts</span>
                     <h3>Settings</h3></a>
                     <a href="#"><span class="material-icons-sharp">account_circle</span>
@@ -47,10 +46,13 @@
         </aside>
         <!-- End of Aside -->
         <main>
-            <H1>Dashboard</H1>
-            <div class="date">
-                <input type="date">
-            </div>
+            <H1><p id="greetings"></p></H1>
+            <br>
+        
+            <div id="current_date"></p>
+                <script>
+                    document.getElementById("current_date").innerHTML = Date();
+                    </script>
             <div class="insights">
                 <div class="holdings">
                     <span class="material-icons-sharp">
@@ -113,8 +115,7 @@
                         <small class="text-muted">Last 24 Hours</small>
                 </div>
                 <!-- End Of income -->
-            </div>
-            <!-- End of Insights -->
+            </div> <!-- End of Insights -->
             <div class="recent-purchase">
                 <H2>Recent Purchase</H2>
                 <table>
@@ -169,18 +170,14 @@
                 <button id="menuBtn">
                     <span class="material-icons-sharp">menu</span>
                 </button>
-                <div class="theme-toggler">
-                    <span class="material-icons-sharp ">light_mode</span>
-                    <span class="material-icons-sharp active">dark_mode</span>
-                    <button onclick="myFunction()">dark_mode</button>
-                </div>
+                
                 <div class="profile">
                     <div class="info">
                         <p>Hello, <b>Vinayak </b></p>
                         <small class="text-muted">Admin</small>
                     </div>
                     <div class="profile-photo">
-                        <img src="minor.jpg" alt="">
+                        <img src="" alt="">
                     </div>
                 </div>
             </div>
@@ -265,6 +262,7 @@
         </div>
     </div>
     <script>
+
         const sideMenu = document.querySelector("aside");
         const menuBtn = document.querySelector("#menuBtn");
         const closeBtn = document.querySelector("#closeBtn");
@@ -276,20 +274,20 @@
         closeBtn.addEventListener('click', ()=>{
         sideMenu.style.display= 'none';
         })
-        themeToggler.addEventListener('click',()=>{
-            document.body.classList.toggle("dark-theme.variables");
-            themeToggler.querySelector('span:nth-child(1)').classList.toggle('active');
-            themeToggler.querySelector('span:nth-child(2)').classList.toggle('active');
-        })
         
-        function myFunction() {
-            var element = document.body;
-            element.classList.toggle("dark-theme.variables");
-          }
-
-
+        
+    
+    <!-- wishing the users -->
+          var myDate = new Date();
+          var hrs = myDate.getHours();
+          var greet;
+          if (hrs < 12)
+            greet = 'Good Morning,Investors';
+          else if (hrs >= 12 && hrs <= 17)
+            greet = 'Good Afternoon,Investors';
+          else if (hrs >= 17 && hrs <= 24)
+            greet = 'Good Evening,Investors';
+          document.getElementById('greetings').innerHTML ='<b>' + greet + '</b>'; 
     </script>
-    <script type="text/javascript">var _mcq=["8","535447"];</script><span id='_mc_mg8'></span><script language="JavaScript" src="https://stat1.moneycontrol.com/mcjs/common/https_mc_widget.js"></script><noscript><a href="https://www.moneycontrol.com/india/stockpricequote/foodprocessing/apisindia/AI65">Apis India</a></noscript>
-    <script type="text/javascript">var _mcq=["1","535447"];</script><span id='_mc_mg1'></span><script language="JavaScript" src="https://stat1.moneycontrol.com/mcjs/common/https_mc_widget.js"></script><noscript><a href="https://www.moneycontrol.com/india/stockpricequote/foodprocessing/apisindia/AI65">Apis India</a></noscript>
-</body>
+    </body>
 </html>
