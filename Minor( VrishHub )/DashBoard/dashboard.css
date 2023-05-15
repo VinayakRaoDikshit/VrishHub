@@ -272,8 +272,8 @@ main .insights .transactions svg circle{
     stroke-dasharray: 100;
 }
 main .insights .income svg circle{
-    stroke-dashoffset: 35;
-    stroke-dasharray: 110;
+    /* stroke-dashoffset: ; */
+    stroke-dasharray: 80;
 }
 main .insights .progress .number{
     position: absolute;
