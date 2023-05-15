@@ -261,20 +261,20 @@ body {
 }
 
 .about-left-container {
-    color: rgba(0, 0, 0, 0.5);
-    padding: 40px;
-    max-width: 750px;
+    color: rgba(228, 228, 228, 0.593);
+    padding: 4px;
+    max-width: 800px;
 }
 
 .about-left-title {
     font-size: 48px;
     text-align: center;
     margin: 20px 20px;
-    color: #000000;
+    color: #efefef;
 }
 
 .about-left-description {
-    font-size: 18px;
+    font-size: 28px;
     text-align: center;
     margin: 0px 20px;
 }
@@ -581,4 +581,9 @@ body {
     .cards-container {
         grid-template-columns: repeat(1, 1fr);
     }
+}
+
+.footer{
+    color: rgba(255, 255, 255, 0.986);
+    text-align: center;
 }
