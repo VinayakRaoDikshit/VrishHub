@@ -6,14 +6,15 @@
     <meta http-equiv="refresh" time="5s">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard</title>
-    <link rel="stylesheet" href="dashboard.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style/dashboard.css') }}">
+    <script src="{{ url_for('static',filename='script/javasc.js') }}"></script>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
 </head>
 <body>
     <div class="container">
         <aside>
             <div class="top">
-                <img  class="logo" src="/VrishHub/Minor( VrishHub )/images/new_logo-removebg-preview.png" alt="">
+                <img  class="logo" src="static\Images\new_logo-removebg-preview.png" alt="">
                 <div class="logo" >
                     
                     <h2>Vrish<span class="danger">Hub</span></h2>
@@ -254,6 +255,5 @@
         </div>
     </div>
     
-
-        
+    </body>
 </html>
